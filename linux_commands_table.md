@@ -1,7 +1,7 @@
 
 | Команда Linux | Призначення, короткий опис | Приклади використання  |
 |-----------|-------------------------|---------------|
-| `ls` | Lists the contents of the current directory. | ![alt text](../image-13.png) |
+| `ls` | Lists the contents of the current directory. | ![1](https://github.com/Uklonsd/DevOps/assets/129956851/38b93f7d-21c1-4724-a71c-fd7971e3a5ae)|
 | `ls -R` | Lists all files in the directory and subdirectories recursively. | ![alt text](../image-12.png) |
 | `ls -a` | Lists all entries including hidden files starting with '.' | ![alt text](../image-14.png) |
 | `ls -al` | Lists detailed information about all files, including hidden ones. | ![alt text](../image-15.png) |
