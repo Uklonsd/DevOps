@@ -9,7 +9,7 @@
 | `cd ..` | Moves one directory up in the hierarchy. |![6](https://github.com/Uklonsd/DevOps/assets/129956851/c2d8c714-7577-48bd-8969-7b6d4fbbbc98)|
 | `cd /` | Changes the current directory to the root directory. |![7](https://github.com/Uklonsd/DevOps/assets/129956851/eb590373-6761-49ac-a5f0-efb9087bd841) |
 | `cat > filename` | Creates a new file or overwrites an existing file and allows you to enter content. |![8](https://github.com/Uklonsd/DevOps/assets/129956851/352be2a0-8f4b-4d33-a784-84d477931a07) |
-| `cat filename` | Displays the contents of a file. | ![alt text](../image-20.png) |
+| `cat filename` | Displays the contents of a file. | ![image-20](https://github.com/Uklonsd/DevOps/assets/129956851/0d404f47-d634-4b8c-b306-b08b54141c2b)|
 | `cat file1 file2 > file3` | Concatenates file1 and file2 and writes the output to file3. | ![alt text](../image-21.png) |
 | `mv file "new file path"` | Moves or renames a file to a new location. | ![alt text](../image-22.png) |
 | `mv filename new_file_name` | Renames a file. | ![alt text](../image-23.png) |
