@@ -22,8 +22,8 @@
 | `rmdir` | Removes an empty directory. | ![alt text](../image-30.png) |
 | `mv` | Moves or renames files or directories. | Rename file:![alt text](../image-31.png) Move file: ![alt text](../image-32.png) |
 | `pr -x` | Formats text files for printing, '-x' sets the number of columns. | ![alt text](../image-33.png) |
-| `pr -h` | Adds a header to the file when printing, '-h' specifies the header. | ![alt text](../image-34.png) |
-| `pr -n` | Adds line numbers to the file. | ![alt text](../image-35.png) |
+| `pr -h` | Adds a header to the file when printing, '-h' specifies the header. |![pr -h](https://github.com/Uklonsd/DevOps/assets/129956851/fb4e90b6-bef1-4bc2-839a-ee2ce2d93356)|
+| `pr -n` | Adds line numbers to the file. | ![pr -n](https://github.com/Uklonsd/DevOps/assets/129956851/8daa6ebe-beb2-44cc-959b-6241270808f7)|
 | `lp -n c` or `lpr -# c` | Sends a file to the printer, '-n' specifies the number of copies. | `lp -n 2 file.txt` - prints two copies of file.txt |
 | `lp -d` or `lpr -P` | Specify the destination | `lp -d printer_name file.txt` or `lp -P printer_name file.txt` |
-| `apt-get` | APT package handling utility in Debian and Ubuntu, used for installing, updating, and removing packages. | ![alt text](../image-37.png) |
+| `apt-get` | APT package handling utility in Debian and Ubuntu, used for installing, updating, and removing packages. |![apt](https://github.com/Uklonsd/DevOps/assets/129956851/1ec1b7b6-c0d1-42be-8b76-8ed84e4eb903)|
