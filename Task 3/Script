@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Function to get the disk usage for a directory
+get_disk_usage() {
+  local dir=$1
+  echo "Disk usage for directory: $dir"
+  du -ab $dir 2>/dev/null | sort -nr | head -n 10
+}
+
+# Directories to check
+dir1="/home"
+dir2="/var/log"
+
+# Get and display disk usage for each directory
+get_disk_usage $dir1
+echo ""
+get_disk_usage $dir2
