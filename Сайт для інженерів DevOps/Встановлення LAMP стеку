@@ -1,0 +1,21 @@
+1. Оновлення системних пакетів:
+sudo apt update
+sudo apt upgrade
+2. Встановлення Apache:
+sudo apt install apache2 -y
+3.Встановлення MySQL:
+sudo apt install mysql-server -y
+4. Налаштування MySQL:
+sudo mysql_secure_installation
+5. Встановлення PHP та необхідних модулів:
+sudo apt install php libapache2-mod-php php-mysql php-gd php-xml php-mbstring php-curl php-zip -y
+6. Перезапуск Apache:
+sudo systemctl restart apache2
+
+Додатково: 
+Налаштовую плагін для паролів - Y
+Вводжу новий пароль root
+Видаляю анонімних користувачів - Y
+Забороняю віддалений вхід під root - Y
+Видаляю тестову базу даних і доступ до неї - Y
+Перезавантажую таблиці привілеїв - Y
