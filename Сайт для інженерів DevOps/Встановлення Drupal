@@ -1,0 +1,46 @@
+1. Встановлення необхідних залежностей:
+sudo apt install curl git unzip -y
+
+2. Завантаження Composer (менеджер залежностей для PHP):
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+
+3. Завантаження Drupal:
+cd /var/www/html
+sudo composer create-project drupal/recommended-project drupal-site
+cd drupal-site
+
+4. Налаштування прав доступу:
+sudo chown -R www-data:www-data /var/www/html/drupal-site
+sudo chmod -R 755 /var/www/html/drupal-site
+
+5. Створення бази даних для Drupal:
+sudo mysql -u root -p
+Вводжу команду для створення бази даних:
+CREATE DATABASE drupal;
+CREATE USER 'drupaluser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON drupal.* TO 'drupaluser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+6. Налаштування Apache для Drupal:
+Створюю новий файл конфігурації для сайту Drupal:
+sudo nano /etc/apache2/sites-available/drupal.conf
+Вставляю наступний вміст:
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/drupal-site/web
+    <Directory /var/www/html/drupal-site/web>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+7. Активування конфігурації сайту та перезапуск Apache:
+sudo a2ensite drupal.conf
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+
