@@ -1,0 +1,6 @@
+cd /tmp
+
+# Створення пустих файлів різного формату
+touch file1.txt file2.txt file3.txt
+touch file1.dev file2.dev file3.dev
+touch file1.pdf file2.pdf file3.pdf
