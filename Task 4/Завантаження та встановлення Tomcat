@@ -1,0 +1,17 @@
+1. Оновлюю системні пакети:
+sudo apt update
+sudo apt upgrade -y
+
+2. авантажую останню версію Tomcat з офіційного сайту:
+wget https://downloads.apache.org/tomcat/tomcat-10/v10.0.12/bin/apache-tomcat-10.0.12.tar.gz
+
+3. Розпаковую завантажений архів:
+tar xzf apache-tomcat-10.0.12.tar.gz
+
+4. Переміщую розпаковану директорію до /opt:
+sudo mv apache-tomcat-10.0.12 /opt/tomcat
+
+5. Налаштовую права доступу для Tomcat:
+sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+sudo chown -R tomcat: /opt/tomcat
+sudo chmod -R 755 /opt/tomcat
